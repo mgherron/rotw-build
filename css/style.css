@@ -58,4 +58,10 @@ header > nav > a {
 	text-align: center;
 	border-radius: 0.4em; /* 2px / 50px */
 	margin-right: 2%;
+	-webkit-transition: background-color 0.2s linear;
 }	
+
+header > nav > a:hover {
+	background-color: #11afa1;
+	-webkit-transition: background-color 0.2s linear;
+}
