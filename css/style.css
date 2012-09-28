@@ -3,7 +3,7 @@ Revolutions of the World Main Stylesheet
 Designed by Matthew Mascioni and Matt Herron
 ============================= */
 
-/* - Begin Containing Styles - */
+/* - Begin Containing Styles and Global Stuff - */
 
 body, html {
 	background-color: #fff;
@@ -29,6 +29,10 @@ body, html {
 	height: 0.25em;
 	background-color: #11afa1;
 	margin-top: 1.1111111%; /* 10px / 900px */
+}
+
+a {
+	text-decoration: none;
 }
 
 /* - End Containing Styles - */
@@ -92,6 +96,30 @@ section#featured > figure.one > img {
 	max-width: 100%;
 }
 
+section#featured > figure.one > figcaption {
+	width: 45.4545455%; /* 200px / 440px */
+	padding: 1.25%; /* 2.5px / 200px */
+	background-color: #000;
+	color: #ddd;
+	font-size: 1.5em; /* 24px / 16px */
+	margin-top: -56.8181818%; /* 250px / 440px */
+	position: relative;
+	z-index: 1;
+	opacity: 0.75;
+}
+
+section#featured > figure.one > h2 {
+	width: 56.8181818%; /* 250px / 440px */
+	padding: 1.25%; /* 2.5px / 200px */
+	background-color: #000;
+	color: #ddd;
+	font-size: 1.125em; /* 18px / 16px */
+	margin-top: 2.2727273%; /* 20px / 440px */
+	position: relative;
+	z-index: 2;
+	opacity: 0.75;
+}
+
 section#featured > figure.two {
 	width: 48.8888889%; /* 440px / 900px */ /* These numbers make me want to grab a coffee over and over again */
 	float: right;
@@ -99,4 +127,95 @@ section#featured > figure.two {
 
 section#featured > figure.two > img {
 	max-width: 100%;
+}
+
+section#featured > figure.two > figcaption {
+	float: right;
+	width: 45.4545455%; /* 200px / 440px */
+	padding: 1.25%; /* 2.5px / 200px */
+	background-color: #000;
+	color: #ddd;
+	font-size: 1.5em; /* 24px / 16px */
+	margin-top: -22.7272727%; /* 250px / 440px */
+	position: relative;
+	z-index: 1;
+	opacity: 0.75;
+}
+
+section#featured > figure.two > h2 {
+	float: right;
+	text-align: right;
+	min-width: 22.7272727%; /* 250px / 440px */
+	max-width: 68.1818182%; /* 300px / 440px */
+	padding: 1.25%; /* 2.5px / 200px */
+	background-color: #000;
+	color: #ddd;
+	font-size: 1.125em; /* 18px / 16px */
+	margin-top: -13.6363636%; /* 60px / 440px */
+	position: relative;
+	z-index: 2;
+	opacity: 0.75;
+}
+
+/* - With a yawn, we end the the featured photos. - */
+/* - Begin main content with... events - */
+
+section#content {
+	width: 93.75%; /* 900px / 960px */
+	margin-top: 1.1111111%; /* 10px / 900px */
+	margin-left: auto;
+	margin-right: auto;
+	color: #ddd;
+}
+
+#event {
+	width: 93.75%; /* 900px / 960px */
+}
+
+#event > #left {
+	float: left;
+	width: 22.2222222%; /* 200px / 900px */
+}
+
+#event > #left h3 {
+	font-size: 1.125em; /* 18px / 16px */
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 0.2em; /* Arbitrary */
+}
+
+#event > #left p {
+	margin-top: 5%; /* 10px / 200px */
+	word-spacing: 0.2em;
+	color: #8fcce3;
+}
+
+#event > #left > p > a {
+	color: #8fcce3;
+	-webkit-transition: color 0.25s linear;
+}
+
+#event > #left > p > a:hover {
+	color: #abd8ea;
+	-webkit-transition: color 0.25s linear;
+}
+
+#event > #right {
+	float: right;
+	width: 75%; /* 675px / 900px */
+}
+
+#event > #right > h1 {
+	font-size: 1.6875em; /* 27px / 16px */
+	font-family: Georgia, serif;
+}
+
+#event > #right > h2 {
+	margin-top: 0.7407407%; /* 5px / 675px */
+	font-size: 1.25em; /* 20px / 16px */
+}
+
+#event > #right > p {
+	margin-top: 1.4814815%; /* 10px / 675px */
+	line-height: 140%;
 }
