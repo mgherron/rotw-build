@@ -25,7 +25,9 @@ body, html {
 }
 
 #separate {
-	width: 100%;
+	width: 93.75%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 0.25em;
 	background-color: #11afa1;
 	margin-top: 1.0416667%; /* 10px / 960px */
@@ -79,6 +81,10 @@ header > nav > a {
 	margin-right: 2%;
 	-webkit-transition: background-color 0.2s linear;
 }	
+
+header > nav > a:last-child {
+	margin-right: 0;
+}
 
 header > nav > a:hover {
 	background-color: #11afa1;
