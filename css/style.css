@@ -226,6 +226,41 @@ section#content {
 	line-height: 140%;
 }
 
+/* -- Timeline */
+
+#timeline {
+	margin-top: 1.4814815%; /* 10px / 675px */
+	margin-bottom: 1.4814815%; /* 10px / 675px */
+	height: 5px;
+	background-color: #ddd;
+	position: relative;
+	z-index: 1;
+}
+
+#timeline ul {
+	display: inline-block;
+}
+
+#timeline ul > ul.marker > li {
+	display: inline-block;
+	/*background-color: #f30;*/ /* For debugging */
+	margin-left: auto;
+	margin-right: auto;
+	width: 7.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#timeline ul > li.event {
+	position: relative;
+	z-index: 2;
+	margin-top: 1.4814815%; /* 10px / 675px */
+	margin-right: 7em;
+	width: 7.5em;
+	text-align: center;
+	/*background-color: #000;*/ /* For debugging */
+}
+
 /* - End Main Content - */
 /* - Begin the footer, which is infinitely easier. - */
 
