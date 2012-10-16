@@ -16,10 +16,18 @@
 	    document.write(unescape("%3Cscript src='js/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
 	}
 	</script>
+	<script src="js/jquery.content-panel-switcher.js"></script>
 	
 	<!-- Get the stylesheets in there -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<script type='text/javascript'>
+	$(document).ready(function() {
+	jcps.fader(300, '#event > #right > p', '.set1');
+	jcps.fader(300, '#event > #right > p.two', '.set2');
+	});
+	</script> 
 	
 </head>
 <body>
@@ -96,28 +104,28 @@
 						<ul>
 						
 							<ul class="marker"><li>|</li></ul>
-							<li class="event">July 1987</li>
+							<li class="event"><a id="content1" class="switcher set1">July 1987</a></li>
 							
 						</ul>
 						
 						<ul>
 							
 							<ul class="marker"><li>|</li></ul>
-							<li class="event">June 2012</li>
+							<li class="event"><a id="content2" class="switcher set1">June 2012</a></li>
 							
 						</ul>
 						
 						<ul>
 							
 							<ul class="marker"><li>|</li></ul>
-							<li class="event">August 3000</li>
+							<li class="event"><a id="content3" class="switcher set1">August 3000</a></li>
 						
 						</ul>
 						
 						<ul>
 							
 							<ul class="marker"><li>|</li></ul>
-							<li class="event">December 3030</li>
+							<li class="event"><a id="content4" class="switcher set1">December 3030</a></li>
 						
 						</ul>
 						
@@ -125,6 +133,11 @@
 						</div>
 					
 					</div>
+					
+					<div id="content1-content" class="switcher-content set1">This is content 1</div>
+					<div id="content2-content" class="switcher-content set1">This is content 2</div>
+					<div id="content3-content" class="switcher-content set1">This is content 3</div>
+					<div id="content4-content" class="switcher-content set1">This is content 4</div>
 				
 			</div>
 			
@@ -143,40 +156,45 @@
 					<h1>Matthew Mascioni elected president</h1>
 					<h2>A subtitle to match that.</h2>
 				
-					<p>Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
+					<p class="two">Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
 					
 					<div id="timeline">
 					
 					<ul>
 					
 						<ul class="marker"><li>|</li></ul>
-						<li class="event">July 1987</li>
+						<li class="event"><a id="content1" class="switcher set2">July 1987</a></li>
 						
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event">June 2012</li>
+						<li class="event"><a id="content2" class="switcher set2">June 2012</a></li>
 						
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event">August 3000</li>
+						<li class="event"><a id="content3" class="switcher set2">August 3000</a></li>
 					
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event">December 3030</li>
+						<li class="event"><a id="content4" class="switcher set2">December 3030</a></li>
 					
 					</ul>
 					
 					
 					</div>
+					
+					<div id="content1-content" class="switcher-content set2">Roar!</div>
+					<div id="content2-content" class="switcher-content set2">Nevermind!</div>
+					<div id="content3-content" class="switcher-content set2">Maybe!</div>
+					<div id="content4-content" class="switcher-content set2">Learn!</div>
 					
 					</div>
 				

@@ -6,7 +6,6 @@ Designed by Matthew Mascioni and Matt Herron
 /* - Begin Containing Styles and Global Stuff - */
 
 body, html {
-	background-color: #fff;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em; /* 16px / 16px */
 	background-color: #303030;
@@ -191,6 +190,7 @@ section#content {
 #event > #left {
 	float: left;
 	width: 22.2222222%; /* 200px / 900px */
+	margin-bottom: 2em;
 }
 
 #event > #left h3 {
@@ -209,6 +209,7 @@ section#content {
 #event > #right {
 	float: right;
 	width: 75%; /* 675px / 900px */
+	margin-bottom: 2em;
 }
 
 #event > #right > h1 {
@@ -239,6 +240,8 @@ section#content {
 
 #timeline ul {
 	display: inline-block;
+	width: 7.5em;
+	margin-right: 3em;
 }
 
 #timeline ul > ul.marker > li {
@@ -246,19 +249,50 @@ section#content {
 	/*background-color: #f30;*/ /* For debugging */
 	margin-left: auto;
 	margin-right: auto;
-	width: 7.5em;
+	width: 100%;
 	text-align: center;
 	font-weight: bold;
+	margin-left: 0.5em;
+	font-size: 1.125em;
 }
 
 #timeline ul > li.event {
 	position: relative;
 	z-index: 2;
 	margin-top: 1.4814815%; /* 10px / 675px */
-	margin-right: 7em;
-	width: 7.5em;
+	width: 100%;
 	text-align: center;
-	/*background-color: #000;*/ /* For debugging */
+	background-color: #404040; 
+	padding: 0.5em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-transition: background-color 0.25s linear;
+}
+
+#timeline ul > li.event:hover {
+	background-color: #505050;
+	-webkit-transition: background-color 0.25s linear;
+	cursor: pointer;
+}
+
+#timeline ul > li.event > a { /* Have a headache yet? */
+	color: #eeeeee;
+	display: block;
+	-webkit-transition: color 0.2s linear;
+}
+
+#timeline > ul > li.event > a:hover {
+	color: #8fcce3;
+	-webkit-transition: color 0.2s linear;
+}
+
+#timeline > ul > li.event > a:active {
+	color: #8fcce3;
+}
+
+.switcher-content {
+	display: none;
 }
 
 /* - End Main Content - */
