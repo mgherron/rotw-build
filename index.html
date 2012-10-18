@@ -24,8 +24,8 @@
 	
 	<script type='text/javascript'>
 	$(document).ready(function() {
-	jcps.fader(300, '#event > #right > p', '.set1');
-	jcps.fader(300, '#event > #right > p.two', '.set2');
+	jcps.slider(350, '#event > #right > p.one', '.set1');
+	jcps.slider(350, '#event > #right > p.two', '.set2');
 	});
 	</script> 
 	
@@ -96,48 +96,48 @@
 				
 					<h1>Matthew Mascioni elected president</h1>
 					<h2>A subtitle to match that.</h2>
-				
-					<p>Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
 					
-						<div id="timeline">
+					<div id="timeline">
+					
+					<ul>
+					
+						<ul class="marker"><li>|</li></ul>
+						<li class="event"><a id="july" class="switcher set1">July 1987</a></li>
 						
-						<ul>
+					</ul>
+					
+					<ul>
 						
-							<ul class="marker"><li>|</li></ul>
-							<li class="event"><a id="content1" class="switcher set1">July 1987</a></li>
-							
-						</ul>
+						<ul class="marker"><li>|</li></ul>
+						<li class="event"><a id="june" class="switcher set1">June 2012</a></li>
 						
-						<ul>
-							
-							<ul class="marker"><li>|</li></ul>
-							<li class="event"><a id="content2" class="switcher set1">June 2012</a></li>
-							
-						</ul>
+					</ul>
+					
+					<ul>
 						
-						<ul>
-							
-							<ul class="marker"><li>|</li></ul>
-							<li class="event"><a id="content3" class="switcher set1">August 3000</a></li>
+						<ul class="marker"><li>|</li></ul>
+						<li class="event"><a id="august" class="switcher set1">August 3000</a></li>
+					
+					</ul>
+					
+					<ul>
 						
-						</ul>
-						
-						<ul>
-							
-							<ul class="marker"><li>|</li></ul>
-							<li class="event"><a id="content4" class="switcher set1">December 3030</a></li>
-						
-						</ul>
-						
-						
-						</div>
+						<ul class="marker"><li>|</li></ul>
+						<li class="event"><a id="december" class="switcher set1">December 3030</a></li>
+					
+					</ul>
+					
+					
+					</div>
+				
+					<p class="one">Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
 					
 					</div>
 					
-					<div id="content1-content" class="switcher-content set1">This is content 1</div>
-					<div id="content2-content" class="switcher-content set1">This is content 2</div>
-					<div id="content3-content" class="switcher-content set1">This is content 3</div>
-					<div id="content4-content" class="switcher-content set1">This is content 4</div>
+					<div id="july-content" class="switcher-content set1">Hello world!</div>
+					<div id="june-content" class="switcher-content set1">This is content 2</div>
+					<div id="august-content" class="switcher-content set1">This is content 3</div>
+					<div id="december-content" class="switcher-content set1">This is content 4</div>
 				
 			</div>
 			
@@ -146,55 +146,56 @@
 			<div id="event">
 			
 					<div id="left">
-					<h3>January 2nd, 2012</h3>
+					<h3>December 2nd, 2012</h3>
 					
 					<p><a href="#">#hashtags</a> <a href="#">#why</a></p>
 					</div>
 					
 					<div id="right">
 				
-					<h1>Matthew Mascioni elected president</h1>
-					<h2>A subtitle to match that.</h2>
-				
-					<p class="two">Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
+					<h1>Guy jumps off of stratosphere.</h1>
+					<h2>No subtitle can define this, seriously.</h2>
 					
 					<div id="timeline">
 					
 					<ul>
 					
 						<ul class="marker"><li>|</li></ul>
-						<li class="event"><a id="content1" class="switcher set2">July 1987</a></li>
+						<li class="event"><a id="one" class="switcher set2">July 1987</a></li>
 						
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event"><a id="content2" class="switcher set2">June 2012</a></li>
+						<li class="event"><a id="two" class="switcher set2">June 2012</a></li>
 						
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event"><a id="content3" class="switcher set2">August 3000</a></li>
+						<li class="event"><a id="three" class="switcher set2">August 3000</a></li>
 					
 					</ul>
 					
 					<ul>
 						
 						<ul class="marker"><li>|</li></ul>
-						<li class="event"><a id="content4" class="switcher set2">December 3030</a></li>
+						<li class="event"><a id="four" class="switcher set2">December 3030</a></li>
 					
 					</ul>
 					
 					
 					</div>
+				
+					<p class="two">There's this guy Felix... and now my life has been changed forever.</p>
 					
-					<div id="content1-content" class="switcher-content set2">Roar!</div>
-					<div id="content2-content" class="switcher-content set2">Nevermind!</div>
-					<div id="content3-content" class="switcher-content set2">Maybe!</div>
-					<div id="content4-content" class="switcher-content set2">Learn!</div>
+					
+					<div id="one-content" class="switcher-content set2">Roar!</div>
+					<div id="two-content" class="switcher-content set2">Nevermind!</div>
+					<div id="three-content" class="switcher-content set2">Maybe!</div>
+					<div id="four-content" class="switcher-content set2">Learn!</div>
 					
 					</div>
 				

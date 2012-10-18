@@ -223,7 +223,7 @@ section#content {
 }
 
 #event > #right > p {
-	margin-top: 1.4814815%; /* 10px / 675px */
+	margin-top: 4em;
 	line-height: 140%;
 }
 
@@ -234,6 +234,7 @@ section#content {
 	margin-bottom: 1.4814815%; /* 10px / 675px */
 	height: 5px;
 	background-color: #ddd;
+	display: block;
 	position: relative;
 	z-index: 1;
 }
