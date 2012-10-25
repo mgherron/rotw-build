@@ -24,8 +24,8 @@
 	
 	<script type='text/javascript'>
 	$(document).ready(function() {
-	jcps.slider(350, '#event > #right > p.one', '.set1');
-	jcps.slider(350, '#event > #right > p.two', '.set2');
+	jcps.slider(350, '#event > #right > article.one', '.set1');
+	jcps.slider(350, '#event > #right > article.two', '.set2');
 	});
 	</script> 
 	
@@ -130,11 +130,29 @@
 					
 					</div>
 				
-					<p class="one">Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</p>
+					<article class="one">Lorem Ipsum is much too boring. The United States of America recognized this, and voted in Matthew Mascioni, the allegedly amazing web developer, to become president. He is very... gratified.</article>
+					
+					<!-- Beginning the "sub" right and left content. -->
+					
+					<div class="subline"></div>
+					
+					<div id="subleft">
+					Column I
+					</div>
+					
+					<div id="subright">
+					Column II
+					</div>
 					
 					</div>
 					
-					<div id="july-content" class="switcher-content set1">Hello world!</div>
+					<div id="july-content" class="switcher-content set1">
+					
+						<h1>Inciting Incident</h1>
+						
+						<p>The world is a dark and scary place.</p>
+					
+					</div>
 					<div id="june-content" class="switcher-content set1">This is content 2</div>
 					<div id="august-content" class="switcher-content set1">This is content 3</div>
 					<div id="december-content" class="switcher-content set1">This is content 4</div>
@@ -189,10 +207,16 @@
 					
 					</div>
 				
-					<p class="two">There's this guy Felix... and now my life has been changed forever.</p>
+					<article class="two">There's this guy Felix... and now my life has been changed forever.</article>
 					
 					
-					<div id="one-content" class="switcher-content set2">Roar!</div>
+					<div id="one-content" class="switcher-content set2">
+					
+						<h1>Inciting Incident</h1>
+						
+						<p>He wanted to jump from the stratosphere. We wanted to see it live on YouTube. Red Bull gives you wings.</p>
+					
+					</div>
 					<div id="two-content" class="switcher-content set2">Nevermind!</div>
 					<div id="three-content" class="switcher-content set2">Maybe!</div>
 					<div id="four-content" class="switcher-content set2">Learn!</div>
