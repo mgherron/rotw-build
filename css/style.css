@@ -43,6 +43,10 @@ a:hover {
 	-webkit-transition: color 0.25s linear;
 }
 
+p {
+	line-height: 140%;
+}
+
 /* - End Containing Styles - */
 /* - Begin Header (Nav/Logo) - */
 
@@ -206,6 +210,22 @@ section#content {
 	color: #8fcce3;
 }
 
+/* Social within the left */
+
+.social {
+	margin-top: 0.5em;
+}
+
+.social a > img {
+	opacity: 0.5;
+	-webkit-transition: opacity 0.2s linear;
+}
+
+.social a > img:hover {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s linear;
+}
+
 #event > #right {
 	float: right;
 	width: 75%; /* 675px / 900px */
@@ -311,14 +331,31 @@ section#content {
 	background-color: #ddd;
 }
 
+#sub > #subleft > section > h2, #sub > #subright > section > h2 {
+	font-size: 1.375em; /* 22px / 16px */
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
 #subleft {
-	margin-top: 1em;
+	margin-top: 0.5em;
 	float: left;
+	width: 44.4444444%; /* 300px / 675px */
 }
 
 #subright {
-	margin-top: 1em;
+	margin-top: 0.5em;
 	float: right;
+	width: 44.4444444%; /* 300px / 675px */
+}
+
+#sub > #subleft > section, #sub > #subright > section {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#subleft > section > ul, #subright > section > ul {
+	line-height: 140%;
 }
 
 /* - End Main Content - */
